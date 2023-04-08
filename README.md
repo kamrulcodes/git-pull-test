@@ -1,2 +1,38 @@
 # git-pull-test
-Git test - Checking git pull effects on local files
+Git test - Checking git pull effects on local files  
+
+`$ git init`  
+Initialized empty Git repository in /home/kamrul/Projects/git-pull-test/.git/  
+
+`$ git remote add origin git@github.com:kamrulcodes/git-pull-test.git`  
+
+`$ touch 'A file to stage.txt' 'A file not to stage.txt'`  
+
+`$ git add 'A file to stage.txt'`  
+
+`$ git commit -m 'Initial Commit.'`  
+[main (root-commit) 8f89afb] Initial Commit.  
+ 1 file changed, 0 insertions(+), 0 deletions(-)  
+ create mode 100644 A file to stage.txt  
+
+`$ git push`  
+fatal: The current branch main has no upstream branch.  
+To push the current branch and set the remote as upstream, use  
+
+    `git push --set-upstream origin main`  
+
+`$ git push --set-upstream origin main`  
+To github.com:kamrulcodes/git-pull-test.git  
+ ! [rejected]        main -> main (fetch first)  
+error: failed to push some refs to 'github.com:kamrulcodes/git-pull-test.git'  
+hint: Updates were rejected because the remote contains work that you do  
+hint: not have locally. This is usually caused by another repository pushing  
+hint: to the same ref. You may want to first integrate the remote changes  
+hint: (e.g., 'git pull ...') before pushing again.  
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.  
+
+**There is a read me file there. I should not have created that file in github to keep the test simple. Let's delete the readme file and the innitial commit from github.com and try again - to keep things simple.**
+
+**Oops! There is no way to delete commit from github.com.**
+
+**Note:** I am keeping this test result here for later understanding and going to create another git test git-pull-test-1.
