@@ -35,7 +35,29 @@ hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 
 **Oops! There is no way to delete commit from github.com.**
 
-**Note:** I am keeping this test result here for later understanding and going to create another git test git-pull-test-1.
+**Note:** I am keeping this test result here for later understanding and going to create another git test git-pull-test-1.  
+
+`$ git pull`  
+remote: Enumerating objects: 6, done.  
+remote: Counting objects: 100% (6/6), done.  
+remote: Compressing objects: 100% (4/4), done.  
+remote: Total 6 (delta 1), reused 0 (delta 0), pack-reused 0  
+Unpacking objects: 100% (6/6), 1.91 KiB | 392.00 KiB/s, done.  
+From github.com:kamrulcodes/git-pull-test  
+ * [new branch]      main       -> origin/main  
+There is no tracking information for the current branch. 👈️  
+Please specify which branch you want to merge with. 👈️  
+See git-pull(1) for details.  
+
+    git pull <remote> <branch>  
+
+If you wish to set tracking information for this branch you can do so with:  
+
+    git branch --set-upstream-to=origin/<branch> main  
+
+`$ git branch --set-upstream-to=origin/main`  
+Branch 'main' set up to track remote branch 'main' from 'origin'.  
+
 
 ` $ git pull origin main --rebase`
 From github.com:kamrulcodes/git-pull-test  
