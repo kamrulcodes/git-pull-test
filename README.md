@@ -36,3 +36,21 @@ hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 **Oops! There is no way to delete commit from github.com.**
 
 **Note:** I am keeping this test result here for later understanding and going to create another git test git-pull-test-1.
+
+` $ git pull origin main --rebase`
+From github.com:kamrulcodes/git-pull-test  
+ * branch            main       -> FETCH_HEAD  
+Successfully rebased and updated refs/heads/main.  
+
+`$ git log`
+
+`$ git push origin main`  
+Enumerating objects: 4, done.  
+Counting objects: 100% (4/4), done.  
+Delta compression using up to 8 threads  
+Compressing objects: 100% (2/2), done.  
+Writing objects: 100% (3/3), 297 bytes | 297.00 KiB/s, done.  
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0  
+To github.com:kamrulcodes/git-pull-test.git  
+   436cf2b..fbcbe02  main -> main  
+
