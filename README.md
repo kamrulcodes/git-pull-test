@@ -35,7 +35,7 @@ hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 
 **Oops! There is no way to delete commit from github.com.**
 
-**Note:** I am keeping this test result here for later understanding and going to create another git test git-pull-test-1.  
+**Note:** I am keeping this test result here for later understanding and going to create another git test [git-pull-test-1](https://github.com/kamrulcodes/git-pull-test-1.git).  
 
 `$ git pull`  
 remote: Enumerating objects: 6, done.  
